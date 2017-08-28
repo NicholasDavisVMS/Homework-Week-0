@@ -1,0 +1,66 @@
+// make sure you are working with the Visual C# templates! Then choose Console Application. Then Name your new project
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Helloworld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //this set of braces is very important!!! Console will be your best friend!
+            //Spaces, Capitalization, and characters are very important!!! Must be identical! And Semicolons!
+            Console.WriteLine("Hello World");
+            Console.ReadLine();
+            
+        }
+        //Pay close attention to Error List messages and potential remedies they provide!
+        // TYPE EXACTLY WHAT THE VIDEO INSTRUCTOR TYPES FROM THIS LESSON ON!!! PRECISION IS VERY IMPORTANT!!!
+    }
+}
+
+/* Extra Notes From Dissection
+    -Learning the Syntax of C#(the 'language') is very important. Related pre-built functionality available(ex: the .NET 
+    framework), which is a 'library' code and a run time(a protective 'bubble' that the code lives inside)
+    
+    -Placing of lines of code between brackets is critical
+    
+    -A namespace is another way of organizing code
+namespace Helloworld
+{
+-a 'class' is a orginaizational tool, a way to keep related methods organized, but is much more in reality. Code is
+  organized in curly brace containers
+    class Program
+    {
+    -"Main" is the name of the static void Main. A name will allow the reuse of a series of code(methods)
+        static void Main(string[] args) 
+        {
+            -referencing class and method name allows us to use the Console lines of code. the '.' is a member accessor(spl?)
+                The double () tells the code that we are passing a string/method of info. A ';' completes a line of code, even if 
+                it is stretched over multiple lines of code which is nice with longer lines of code. But other code methods might 
+                not use this.
+                
+               -Indentation helps the user organize, and C# will automatically color code certain 'terms' to help with human 
+                  readability
+                  
+               -The Solution Explorer to the right of the code is 'the code itself', and is the main navigation device and will
+                  be the finished .NET assembly program
+               -The projects like 'Hello World' will be put into solutions in the Solution Explorer, which itself will become a crucial 
+                  code management strategy
+               -DO NOT MAKE ANY CHANGES IF THE CODE IS CONVERTED TO NOTEPAD, IT MIGHT CORRUPT THE FILE BEYOND REPAIR AND DO NOT SAVE
+                  CHANGES
+                -The Debug feature allows the code to run line by line and for us to see it and spot potential problems, but debuged
+                  versions are not optimized to be released though it can be run independently from visual studio. Must use the release
+                  version choosable on the top bar of visual studio by replacing debug. Or the Configuration Manager witch allows
+                  one to work with different configurations
+                ->Build >executable will build a released configuration without running the application afterwards
+            Console.WriteLine("Hello World");
+            Console.ReadLine();
+        }
+    }
+}
+*/
